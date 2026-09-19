@@ -53,44 +53,60 @@ footer{margin-top:56px;padding-top:22px;border-top:1px solid #26344F;
 <header>
   <div class="mark">LATITUDLE</div><div class="rule"></div>
   <h1>Privacy Policy / Gizlilik Politikası</h1>
-  <div class="meta"><p><strong>Last updated / Son güncelleme: 17 September 2026</strong></p><p>Applies to / Kapsam: Latitudle for Android (<code>com.afurkantitiz.latitudle</code>), all versions.</p></div>
+  <div class="meta"><p><strong>Last updated / Son güncelleme: 19 September 2026</strong></p><p>Applies to / Kapsam: Latitudle for Android (<code>com.afurkantitiz.latitudle</code>), all versions.</p></div>
   <nav><a href="#en" class="on">English</a><a href="#tr">Türkçe</a></nav>
 </header>
 <section id="en"><h2>Short version</h2>
-<p>Latitudle collects nothing. It has no internet permission, so it cannot send anything anywhere even if it wanted to. There are no accounts, no ads, no analytics and no third‑party SDKs. Everything you do in the game stays in the app's own storage on your device.</p>
+<p>The game collects nothing about you. There are no accounts and no analytics, and everything you do in the game stays in the app's own storage on your device.</p>
+<p>There is one exception, and it is yours to trigger: <strong>an optional rewarded ad.</strong> When you are stuck, the game can offer you a hint or the answer in exchange for watching a short ad. Those ads come from Google AdMob, and AdMob receives data of its own when one plays. If you never ask for help, no ad is ever requested and nothing leaves your device.</p>
 <h2>What the app stores, and where</h2>
 <p>Latitudle keeps a single settings file in its private app storage on your device. It holds:</p>
 <ul><li>your guesses for the current puzzles, and which puzzles you have finished;</li><li>your statistics: games played, wins, current and longest streak, guess distribution;</li><li>your passport: the countries you have found and the countries you have guessed;</li><li>your preferences: language, distance unit, daily reminder.</li></ul>
 <p>No part of this ever leaves the device through the app. Uninstalling Latitudle deletes all of it.</p>
-<h2>No network access</h2>
-<p>The app declares no <code>INTERNET</code> permission in its manifest. Android therefore blocks every network call it could attempt. Map data, country names and distances ship inside the app itself; nothing is downloaded or reported at any point.</p>
+<h2>The game works offline; only help needs a connection</h2>
+<p>Map data, country names and distances ship inside the app itself. The puzzle, the globe, your statistics, your passport, sharing, past puzzles and the blitz all work with no connection at all.</p>
+<p>The internet is used for exactly one thing: fetching a rewarded ad when you have asked for a hint or for the answer. With no connection, those buttons are simply not shown and the rest of the game is unchanged.</p>
+<h2>Ads (Google AdMob)</h2>
+<p>Ads are served by Google AdMob, and they are never forced: there are no banners, no ads between screens and no ad on start-up. An ad plays only after you tap a help button and then confirm it.</p>
+<p>When an ad is requested, Google receives data such as your device's advertising ID, your IP address (from which an approximate location can be derived), device and app information, and how you interact with the ad. Google uses this to serve and measure ads. What Google does with it is described in its own policies:</p>
+<ul><li>Google Privacy Policy — https://policies.google.com/privacy</li><li>How Google uses data from sites or apps that use its services — https://policies.google.com/technologies/partner-sites</li></ul>
+<p>Latitudle itself never sees, stores or receives any of this. It has no server of its own.</p>
+<p>Where consent law requires it (the EEA, the UK and Switzerland), the app shows Google's own consent form before any ad is requested, and a <strong>Settings → Ads → Ad preferences</strong> entry lets you reopen it and change your answer at any time. Outside those regions the platform reports no requirement and the entry is not shown.</p>
 <h2>Permissions the app does ask for</h2>
-<ul><li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>) — only if you turn on the optional daily reminder. The reminder is a local alarm on your device; nothing is sent to a server, and the app never shows a notification on days you have already solved.</li><li><strong>Run at startup</strong> (<code>RECEIVE_BOOT_COMPLETED</code>) — so the reminder you set survives a reboot. It is used for nothing else.</li></ul>
-<p>Both are optional: decline them and the rest of the game works exactly the same.</p>
+<ul><li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>) — only if you turn on the optional daily reminder. The reminder is a local alarm on your device; nothing is sent to a server, and the app never shows a notification on days you have already solved.</li><li><strong>Run at startup</strong> (<code>RECEIVE_BOOT_COMPLETED</code>) — so the reminder you set survives a reboot. It is used for nothing else.</li><li><strong>Internet</strong> (<code>INTERNET</code>) and <strong>advertising ID</strong> (<code>AD_ID</code>) — used only to fetch a rewarded ad when you have asked for one.</li><li><strong>Network state</strong> (<code>ACCESS_NETWORK_STATE</code>) — read-only, to tell an offline device apart from a connected one, so the app can leave the help buttons out instead of offering something it cannot deliver.</li></ul>
+<p>The notification permissions are optional: decline them and the rest of the game works exactly the same. Declining a connection does the same — you simply do not get the optional hints.</p>
 <h2>Android Backup</h2>
 <p>If you have Android's Auto Backup turned on for your device, Android may copy the app's settings file to <strong>your own</strong> Google account, the same way it does for other apps. That is a transfer between you and Google, governed by Google's terms, not by Latitudle — the app neither reads nor sends it. You can turn Auto Backup off in your device's system settings.</p>
 <h2>Children</h2>
-<p>Latitudle is suitable for all ages. Because it collects no data at all, it collects no data from children either.</p>
+<p>Latitudle is suitable for all ages. The game collects no data from anyone, children included. The optional ads are served by Google AdMob under its own policies, and the app requests only ad content rated suitable for general audiences.</p>
 <h2>Changes</h2>
 <p>If this policy ever changes, the updated version will be published at this address with a new date at the top.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:titizabdullahfurkan@gmail.com">titizabdullahfurkan@gmail.com</a></p>
 <p>---</p></section>
 <section id="tr"><h2>Kısa hâli</h2>
-<p>Latitudle hiçbir veri toplamaz. İnternet izni yoktur; dolayısıyla istese de hiçbir yere hiçbir şey gönderemez. Hesap, reklam, analitik ve üçüncü taraf SDK'sı yoktur. Oyunda yaptığınız her şey cihazınızdaki uygulamaya özel depolama alanında kalır.</p>
+<p>Oyun sizinle ilgili hiçbir veri toplamaz. Hesap ve analitik yoktur; oyunda yaptığınız her şey cihazınızdaki uygulamaya özel depolama alanında kalır.</p>
+<p>Tek bir istisna var ve onu başlatan sizsiniz: <strong>isteğe bağlı ödüllü reklam.</strong> Takıldığınızda oyun, kısa bir reklam izlemeniz karşılığında ipucu ya da cevabı önerebilir. Bu reklamlar Google AdMob'dan gelir ve bir reklam oynadığında AdMob kendi verisini alır. Hiç yardım istemezseniz hiç reklam istenmez ve cihazınızdan hiçbir şey çıkmaz.</p>
 <h2>Uygulama neyi, nerede saklıyor</h2>
 <p>Latitudle cihazınızdaki özel uygulama alanında tek bir ayar dosyası tutar. İçinde şunlar vardır:</p>
 <ul><li>açık bulmacalardaki tahminleriniz ve bitirdiğiniz bulmacalar;</li><li>istatistikleriniz: oynanan, kazanılan, mevcut ve en uzun seri, tahmin dağılımı;</li><li>pasaportunuz: bulduğunuz ülkeler ve tahmin ettiğiniz ülkeler;</li><li>tercihleriniz: dil, mesafe birimi, günlük hatırlatma.</li></ul>
 <p>Bunların hiçbiri uygulama aracılığıyla cihazdan çıkmaz. Latitudle'ı kaldırdığınızda hepsi silinir.</p>
-<h2>Ağ erişimi yok</h2>
-<p>Uygulama manifest'inde <code>INTERNET</code> izni tanımlı değildir. Bu yüzden Android, uygulamanın deneyebileceği her ağ çağrısını engeller. Harita verisi, ülke adları ve mesafeler uygulamanın içinde gelir; hiçbir aşamada bir şey indirilmez veya bildirilmez.</p>
+<h2>Oyun çevrimdışı çalışır; yalnızca yardım bağlantı ister</h2>
+<p>Harita verisi, ülke adları ve mesafeler uygulamanın içinde gelir. Bulmaca, küre, istatistikleriniz, pasaportunuz, paylaşım, geçmiş bulmacalar ve blitz hiçbir bağlantı olmadan çalışır.</p>
+<p>İnternet tam olarak tek bir şey için kullanılır: ipucu ya da cevap istediğinizde ödüllü reklamı getirmek. Bağlantı yoksa o düğmeler hiç gösterilmez ve oyunun geri kalanı aynen çalışır.</p>
+<h2>Reklamlar (Google AdMob)</h2>
+<p>Reklamlar Google AdMob tarafından sunulur ve asla zorunlu değildir: banner yok, ekranlar arası reklam yok, açılışta reklam yok. Reklam ancak bir yardım düğmesine dokunup onayladıktan sonra oynar.</p>
+<p>Bir reklam istendiğinde Google; cihazınızın reklam kimliği, IP adresiniz (buradan yaklaşık bir konum çıkarılabilir), cihaz ve uygulama bilgileri ile reklamla nasıl etkileşime girdiğiniz gibi verileri alır. Google bunları reklam sunmak ve ölçmek için kullanır. Bu verilerle ne yaptığı kendi politikalarında anlatılır:</p>
+<ul><li>Google Gizlilik Politikası — https://policies.google.com/privacy</li><li>Google'ın hizmetlerini kullanan site ve uygulamalardan gelen verileri nasıl kullandığı — https://policies.google.com/technologies/partner-sites</li></ul>
+<p>Latitudle bunların hiçbirini görmez, saklamaz ve almaz. Kendine ait bir sunucusu yoktur.</p>
+<p>Onay mevzuatının gerektirdiği yerlerde (AEA, Birleşik Krallık ve İsviçre) uygulama, herhangi bir reklam istenmeden önce Google'ın kendi onay formunu gösterir; <strong>Ayarlar → Reklamlar → Reklam tercihleri</strong> satırından bu formu istediğiniz zaman yeniden açıp cevabınızı değiştirebilirsiniz. Bu bölgelerin dışında platform bir gereklilik bildirmez ve satır hiç görünmez.</p>
 <h2>Uygulamanın istediği izinler</h2>
-<ul><li><strong>Bildirimler</strong> (<code>POST_NOTIFICATIONS</code>) — yalnızca isteğe bağlı günlük hatırlatmayı açarsanız. Hatırlatma cihazınızdaki yerel bir alarmdır; sunucuya bir şey gitmez ve zaten çözdüğünüz günlerde bildirim gösterilmez.</li><li><strong>Açılışta çalıştır</strong> (<code>RECEIVE_BOOT_COMPLETED</code>) — kurduğunuz hatırlatmanın yeniden başlatmadan sonra da durması için. Başka hiçbir amaçla kullanılmaz.</li></ul>
-<p>İkisi de isteğe bağlıdır; vermezseniz oyunun geri kalanı aynı şekilde çalışır.</p>
+<ul><li><strong>Bildirimler</strong> (<code>POST_NOTIFICATIONS</code>) — yalnızca isteğe bağlı günlük hatırlatmayı açarsanız. Hatırlatma cihazınızdaki yerel bir alarmdır; sunucuya bir şey gitmez ve zaten çözdüğünüz günlerde bildirim gösterilmez.</li><li><strong>Açılışta çalıştır</strong> (<code>RECEIVE_BOOT_COMPLETED</code>) — kurduğunuz hatırlatmanın yeniden başlatmadan sonra da durması için. Başka hiçbir amaçla kullanılmaz.</li><li><strong>İnternet</strong> (<code>INTERNET</code>) ve <strong>reklam kimliği</strong> (<code>AD_ID</code>) — yalnızca siz istediğinizde ödüllü reklamı getirmek için.</li><li><strong>Ağ durumu</strong> (<code>ACCESS_NETWORK_STATE</code>) — yalnızca okuma; çevrimdışı bir cihazı bağlı olandan ayırmak için. Böylece uygulama, sunamayacağı bir şeyi teklif etmek yerine yardım düğmelerini hiç göstermez.</li></ul>
+<p>Bildirim izinleri isteğe bağlıdır; vermezseniz oyunun geri kalanı aynı şekilde çalışır. Bağlantı vermemek de öyle — sadece isteğe bağlı ipuçlarını alamazsınız.</p>
 <h2>Android Yedekleme</h2>
 <p>Cihazınızda Android'in Otomatik Yedekleme özelliği açıksa, Android uygulamanın ayar dosyasını diğer uygulamalarda olduğu gibi <strong>sizin kendi</strong> Google hesabınıza kopyalayabilir. Bu, sizinle Google arasında gerçekleşen ve Google'ın koşullarına tabi olan bir aktarımdır; Latitudle bu dosyayı ne okur ne gönderir. Otomatik Yedekleme'yi cihaz ayarlarınızdan kapatabilirsiniz.</p>
 <h2>Çocuklar</h2>
-<p>Latitudle her yaş için uygundur. Hiç veri toplamadığı için çocuklardan da veri toplamaz.</p>
+<p>Latitudle her yaş için uygundur. Oyun hiç kimseden, çocuklar dâhil, veri toplamaz. İsteğe bağlı reklamlar Google AdMob tarafından kendi politikaları uyarınca sunulur ve uygulama yalnızca genel izleyiciye uygun derecelendirilmiş reklam içeriği ister.</p>
 <h2>Değişiklikler</h2>
 <p>Bu politika değişirse, güncellenen sürüm bu adreste, en üstte yeni bir tarihle yayımlanır.</p>
 <h2>İletişim</h2>
